@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVN dos sites</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="imgs/faviconPORT.png" type="image/x-png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <img src="imgs/2.png" alt="">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#especialidades">ESPECIALIDADES</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
+                </ul>
+                <div class="btn_contat"> <button><a href="#contato">CONTATO</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="topo_site" id="inicio">
+            <div class="interface">
+                <div class="text_topo_site">
+                    <h1>MODIFICANDO A FORMA DE ENXERGAR <span>TRABALHO</span></h1>
+                    <p>
+                        Ajudamos marcas e profissionais a crescerem por meio de soluções digitais inteligentes,
+                        unindo <span>tecnologia</span>, design estratégico e inovação para gerar resultados reais.
+                    </p>
+                </div>
+                <div class="btn_contat">
+                    <button><a href="#contato">CONTATO</a></button>
+                </div>
+                <div class="img_topo">
+                    <img src="imgs/KVN.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="especialidades" class="especialidades">
+            <div class="container">
+                <header class="esp-header">
+                    <h1><span>ÁREAS</span> EM QUE ATUO</h1>
+                    <p>Criação de interfaces acessíveis e interativas com foco em performance e boas práticas.</p>
+                </header>
+
+                <div class="cards">
+                    <article class="card" data-tech="html">
+                        <div class="card-icon"><img src="https://img.icons8.com/ios_filled/512/228BE6/html-5.png"
+                                alt=""></div>
+                        <h3>HTML </h3>
+                        <p>Organizo o conteúdo do site de forma clara, facilitando a leitura, a navegação e a indexação
+                            no navegador, garantindo acessibilidade para todos os usuários.</p>
+                        <ul class="skills">
+                            <li>Organização do conteúdo</li>
+                            <li>Acessível para todos</li>
+                            <li>Melhor leitura no navegador</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="card" data-tech="css">
+                        <div class="card-icon"> <img
+                                src="https://static.vecteezy.com/system/resources/previews/066/386/006/non_2x/the-css-logo-icon-free-png.png"
+                                alt=""></div>
+                        <h3>CSS </h3>
+                        <p>Layouts bonitos, organizados e adaptáveis a qualquer tela, garantindo uma aparência
+                            profissional no celular, tablet e computador.</p>
+                        <ul class="skills">
+                            <li>Visual moderno</li>
+                            <li>Funciona em qualquer tela</li>
+                            <li>Identidade profissional</li>
+                        </ul>
+
+                    </article>
+
+                    <article class="card" data-tech="js">
+                        <div class="card-icon"> <img
+                                src="https://img.icons8.com/ios_filled/512/228BE6/javascript-logo.png" alt=""></div>
+                        <h3>JavaScript</h3>
+                        <p>Adiciono interações e comportamentos ao site, como botões inteligentes, formulários dinâmicos
+                            e respostas rápidas às ações do usuário.</p>
+                        <ul class="skills">
+                            <li>Botões inteligentes</li>
+                            <li>Formulários dinâmicos</li>
+                            <li>Experiência fluida</li>
+
+                        </ul>
+
+                    </article>
+                </div>
+
+                <div class="cta">
+                    <button><a href="#contato">CONTATO</a></button>
+                </div>
+            </div>
+
+            <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button id="modal-close" class="modal-close" aria-label="Fechar">✕</button>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-body">Aqui você pode descrever projetos, linkar GitHub ou mostrar snippets rápidos.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="imgSobre">
+                    <img src="imgs/EU.jpg" alt="Foto de Anthony Keyvson">
+                </div>
+
+                <div class="textSobre">
+                    <h2>OLÁ! Meu nome é <span>ANTHONY KEYVSON</span>!</h2>
+                    <p>
+                        Atuo criando experiências digitais funcionais, bem estruturadas e pensadas para performance.
+
+                        Trabalho com foco em resolver problemas reais, transformando necessidades em
+                        <span>soluções</span> simples,
+                        eficientes e escaláveis. A programação, para mim, é um processo contínuo de aprendizado, ajuste
+                        e evolução.
+
+                        Desenvolvo projetos com atenção aos detalhes, <span>organização</span> de código e escolha
+                        consciente das
+                        tecnologias, sempre buscando entregar algo que seja fácil de manter, rápido de usar e claro para
+                        quem acessa.
+
+                        Minha <span>prioridade</span> é unir funcionalidade, clareza e propósito em cada projeto.
+                    </p>
+                    <div class="redes" aria-label="Redes sociais">
+                        <a class="social" href="https://github.com/kvndossites" target="_blank" rel="noopener"
+                            aria-label="GitHub de Anthony Keyvson">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                        </a>
+
+                        <a class="social" href="https://www.instagram.com/kvndosites__?igsh=MWdxOXM0ZGN0cjJkOA==
+" target="_blank" rel="noopener" aria-label="instagram de Anthony Keyvson">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="instagram">
+                        </a>
+                        <a class="social zap" href="https://wa.me/557591843526" target="_blank" aria-label="WhatsApp">
+                            <img src="https://i.pinimg.com/originals/82/31/69/823169a9ebb95fb53b0acf6c3efd5928.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projetos">
+            <div class="container">
+                <header class="proj-header">
+                    <h2><span>MEUS</span> PROJETOS</h2>
+                    <p>Alguns trabalhos que desenvolvi focando em design, performance e experiência do usuário.</p>
+                </header>
+
+                <div class="projetos-grid">
+
+                    <!-- PROJETO 1 -->
+                    <article class="projeto-card" style="--bg-projeto: url('imgs/BARBERDUO.png')">
+                        <div class="projeto-img">
+                            <img src="imgs/BARBERDUO.png" alt="Projeto Barbearia">
+                        </div>
+
+                        <div class="projeto-content">
+                            <h3>Sistema de Agendamento</h3>
+                            <p>Site para barbearia com agendamento online, com conexão com Whatssap.</p>
+
+                            <ul class="projeto-tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <div class="projeto-actions">
+                                <a href="https://barberduo.netlify.app/" class="btn-projeto" target="_blank">Ver
+                                    projeto</a>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- PROJETO 2 -->
+                    <article class="projeto-card" style="--bg-projeto: url('imgs/BARBERDUO.png')">
+                        <div class="projeto-img">
+                            <img src="" alt="Projeto em produção">
+                        </div>
+
+                        <div class="projeto-content">
+                            <h3>Projeto em desenvolvimento</h3>
+                            <p>Site está sendo desenvolvido</p>
+
+                            <!-- <ul class="projeto-tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul> -->
+
+                            <div class="projeto-actions">
+                                <a href="" class="btn-projeto" target="_blank">Ver
+                                    projeto</a>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- PROJETO 3 -->
+                    <article class="projeto-card" style="--bg-projeto: url('imgs/BARBERDUO.png')">
+                        <div class="projeto-img">
+                            <img src="" alt="Projeto em produção">
+                        </div>
+
+                        <div class="projeto-content">
+                            <h3>Projeto em desenvolvimento</h3>
+                            <p>Site em desenvolvimento</p>
+                            <!-- 
+                            <ul class="projeto-tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul> -->
+
+                            <div class="projeto-actions">
+                                <a href="" class="btn-projeto" target="_blank">Ver
+                                    projeto</a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="contact" id="contatos">
+            <h2 class="titulo-contato">
+                Entre em <span>Contato</span>
+            </h2>
+
+            <form class="form-contato" id="contato">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="subject" placeholder="Digite o assunto" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar mensagem</button>
+            </form>
+        </section>
+        <footer class="footer-tech">
+            <div class="footer-tech-container">
+
+                <!-- BRAND -->
+                <div class="footer-tech-brand">
+                    <img src="imgs/2.png" alt="KVN dos Sites">
+                    <p>Criando experiências digitais modernas, funcionais e estratégicas.</p>
+                </div>
+
+                <!-- SERVIÇOS -->
+                <div class="footer-tech-block">
+                    <h4>Serviços</h4>
+                    <div class="footer-tags">
+                        <span>Desenvolvimento Web</span>
+                        <span>UI / UX Design</span>
+                        <span>Performance</span>
+                        <span>Landing Pages</span>
+                    </div>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="footer-tech-block">
+                    <h4>Conecte-se</h4>
+                    <div class="footer-tech-social">
+                        <a href="https://github.com/kvndossites" target="_blank" aria-label="GitHub">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                        </a>
+                        <a href="https://www.instagram.com/kvndosites__" target="_blank" aria-label="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png">
+                        </a>
+                        <a class="social zap" href="https://wa.me/557591843526" target="_blank" aria-label="WhatsApp">
+                            <img src="https://i.pinimg.com/originals/82/31/69/823169a9ebb95fb53b0acf6c3efd5928.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-tech-bottom">
+                © 2026 — KVN dos Sites. Todos os direitos reservados.
+            </div>
+        </footer>
+
+
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
